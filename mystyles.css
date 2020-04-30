@@ -46,7 +46,32 @@ h1 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 }
+
+#s1_header aside {
+	text-align: center;
+	grid-column: 2 / 4;
+	grid-row: 4 / 5;
+}
+
+@media (min-width: 992px) {
+	#s1_header {
+		height: 50vh;
+	}
+	#s1_header aside {
+		grid-row: 4 / 5;
+	}
+	#s1_header .display-4 {
+		font-size: 28px;
+	}
+	#s1_header h5 {
+		font-size: 12px;
+	}
+}
+
 /* ----------- s2_trio -----------*/
 
 /* ----------- s3_painting_of_the_week -----------*/
