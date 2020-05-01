@@ -164,6 +164,21 @@ h1 {
 }
 
 /* ----------- s5_prints -----------*/
+.my-thumbs {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 10px;
+	justify-items: center;
+}
+
+.my-thumbs img s {
+	display: block;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.my-thumbs .my-bk-image {
+	box-shadow: 000 rgba(0, 0, 0, 0.4);
+}
 
 /* ----------- s6_paintings -----------*/
 
